@@ -19,7 +19,9 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 label,
 a,
 button {
@@ -629,6 +631,10 @@ li {
 }
 
 .clients__slider-reating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 128px;
   height: 22px;
   margin: 0 auto 16px;
@@ -638,6 +644,7 @@ li {
   fill: #57ff51;
 }
 .clients__slider-name {
+  padding: 0 0 0 15px;
   font-family: "Open Sans";
   font-size: 14.222px;
   font-weight: 600;
@@ -654,6 +661,7 @@ li {
 }
 
 .clients__slider-profession {
+  padding: 0 0 0 5px;
   display: block;
   font-family: "Open Sans";
   font-size: 13px;
@@ -673,7 +681,7 @@ li {
   /*размер всего слайдера*/
   max-width: 320px; /*максимальнная длинна*/
   min-height: 315px;
-  margin: 0 auto 72px;
+  margin: 0 auto 54px;
 }
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
@@ -725,6 +733,7 @@ li {
   margin-left: -400%;
 }
 #controls {
+  bottom: -6px;
   position: relative;
   width: 65px;
   height: 20px;
@@ -742,11 +751,9 @@ li {
   /*прозрачность стрелок при отводе курсора*/
   transition: opacity 0.2s ease-out;
 }
-.questions {
-}
 .questions__title {
   margin: 0 0 20px;
-  text-align: right;
+  text-align: left;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -820,4 +827,53 @@ li {
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
+}
+
+.page-footer {
+  padding: 26px 0 27px;
+  background-color: #123812;
+}
+.page-footer__menu-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-footer__logo {
+  width: 17px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-footer__logo svg {
+  display: block;
+}
+.page-footer__nav-link-wrp {
+  max-width: 46px;
+  width: 100%;
+  min-height: 41px;
+}
+.page-footer__social-link-wrp {
+  max-width: 57px;
+  width: 100%;
+  min-height: 41px;
+}
+.page-footer__telephone-link-wrp {
+  max-width: 93px;
+  width: 100%;
+  min-height: 26px;
+}
+.page-footer__link {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 12px;
+  background: linear-gradient(
+    135deg,
+    #e3e3e3 0.7%,
+    #e3e3e3 55.21%,
+    #e3e3e3 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

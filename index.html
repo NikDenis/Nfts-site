@@ -107,22 +107,29 @@
         <div class="start-creating__selection-panel">
           <form class="selection-panel__form">
             <input
+              name="start-creating"
               class="selection-panel__input"
               checked
-              type="checkbox"
+              type="radio"
               id="basik"
             />
             <label class="selection-panel__label" for="basik">Basik</label>
 
             <input
+              name="start-creating"
               class="selection-panel__input"
-              type="checkbox"
+              type="radio"
               id="professional"
             />
             <label class="selection-panel__label" for="professional"
               >Professional</label
             >
-            <input class="selection-panel__input" type="checkbox" id="elite" />
+            <input
+              name="start-creating"
+              class="selection-panel__input"
+              type="radio"
+              id="elite"
+            />
             <label class="selection-panel__label" for="elite">Elite</label>
           </form>
         </div>
@@ -1014,5 +1021,59 @@
         </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__menu-wrp center">
+        <div class="page-footer__logo">
+          <a href="index.html">
+            <svg
+              width="17"
+              height="7"
+              viewBox="0 0 17 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.312 2.19613C3.85067 2.19613 4.28267 2.35613 4.608 2.67613C4.93867 2.99613 5.104 3.47879 5.104 4.12413V6.60413H3.584V4.37213C3.584 3.78013 3.34667 3.48413 2.872 3.48413C2.61067 3.48413 2.4 3.56946 2.24 3.74013C2.08533 3.91079 2.008 4.16679 2.008 4.50813V6.60413H0.488V2.26813H1.936V2.74013C2.10667 2.56413 2.30933 2.43079 2.544 2.34013C2.77867 2.24413 3.03467 2.19613 3.312 2.19613ZM7.53831 2.42813H8.57031V3.56413H7.57831V6.60413H6.05831V2.31613C6.05831 1.78813 6.21565 1.36946 6.53031 1.06013C6.85031 0.750792 7.29565 0.596126 7.86631 0.596126C8.05831 0.596126 8.24498 0.614792 8.42631 0.652126C8.60765 0.689459 8.75698 0.745459 8.87431 0.820126L8.49831 1.89213C8.34898 1.80679 8.19698 1.76413 8.04231 1.76413C7.88231 1.76413 7.75698 1.81213 7.66631 1.90813C7.58098 2.00413 7.53831 2.14546 7.53831 2.33213V2.42813ZM11.9206 6.42813C11.7926 6.50813 11.6353 6.56946 11.4486 6.61213C11.2673 6.65479 11.0726 6.67613 10.8646 6.67613C10.2993 6.67613 9.86463 6.53746 9.56063 6.26013C9.26196 5.98279 9.11263 5.56946 9.11263 5.02013V1.30013H10.6326V2.42813H11.6166V3.56413H10.6326V5.00413C10.6326 5.16413 10.6726 5.28679 10.7526 5.37213C10.8326 5.45746 10.942 5.50013 11.0806 5.50013C11.2566 5.50013 11.4113 5.45479 11.5446 5.36413L11.9206 6.42813ZM14.0796 6.67613C13.717 6.67613 13.3596 6.63613 13.0076 6.55613C12.6556 6.47079 12.373 6.36146 12.1596 6.22813L12.6156 5.18813C12.813 5.31079 13.0476 5.40946 13.3196 5.48413C13.5916 5.55346 13.861 5.58813 14.1276 5.58813C14.373 5.58813 14.5463 5.56413 14.6476 5.51613C14.7543 5.46279 14.8076 5.38813 14.8076 5.29213C14.8076 5.19613 14.7436 5.12946 14.6156 5.09213C14.493 5.04946 14.2956 5.00946 14.0236 4.97213C13.677 4.92946 13.381 4.87346 13.1356 4.80413C12.8956 4.73479 12.6876 4.60679 12.5116 4.42013C12.3356 4.23346 12.2476 3.97213 12.2476 3.63613C12.2476 3.35879 12.3303 3.11346 12.4956 2.90013C12.661 2.68146 12.901 2.51079 13.2156 2.38813C13.5356 2.26013 13.917 2.19613 14.3596 2.19613C14.6743 2.19613 14.9863 2.22813 15.2956 2.29213C15.605 2.35613 15.8636 2.44679 16.0716 2.56413L15.6156 3.59613C15.2316 3.38279 14.8156 3.27613 14.3676 3.27613C14.1276 3.27613 13.9516 3.30546 13.8396 3.36413C13.7276 3.41746 13.6716 3.48946 13.6716 3.58013C13.6716 3.68146 13.733 3.75346 13.8556 3.79613C13.9783 3.83346 14.181 3.87346 14.4636 3.91613C14.821 3.96946 15.117 4.03079 15.3516 4.10013C15.5863 4.16946 15.789 4.29746 15.9596 4.48413C16.1356 4.66546 16.2236 4.92146 16.2236 5.25213C16.2236 5.52413 16.141 5.76946 15.9756 5.98813C15.8103 6.20146 15.565 6.36946 15.2396 6.49213C14.9196 6.61479 14.533 6.67613 14.0796 6.67613Z"
+                fill="url(#paint0_linear_0_184)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_0_184"
+                  x1="0"
+                  y1="-2.39587"
+                  x2="17.9043"
+                  y2="-0.846555"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#07C800" />
+                  <stop offset="0.612619" stop-color="#57FF51" />
+                  <stop offset="1" stop-color="#07C800" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <ul class="page-footer__nav-link-wrp">
+          <li>
+            <a class="page-footer__link" href="#"
+              >Creat <span class="big-text">nft</span>s</a
+            >
+          </li>
+          <li><a class="page-footer__link" href="#">Home</a></li>
+          <li><a class="page-footer__link" href="#">Pages</a></li>
+        </ul>
+        <ul class="page-footer__social-link-wrp">
+          <li><a class="page-footer__link" href="#">Telegram</a></li>
+          <li><a class="page-footer__link" href="#">Instagram</a></li>
+          <li><a class="page-footer__link" href="#">Twitter</a></li>
+        </ul>
+        <ul class="page-footer__telephone-link-wrp">
+          <li><a class="page-footer__link" href="#">70-50-40-80</a></li>
+          <li>
+            <a class="page-footer__link" href="#">nft-gostricke@mail.ru</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
